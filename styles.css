@@ -1,0 +1,276 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: roboto, sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+
+
+body {
+    font-family: roboto, sans-serif, system-ui;
+    overflow-x: hidden;
+}
+
+.container {
+    height: 400px;
+    margin: 0 auto;
+}
+
+.image {
+    width: 80%;
+    height: 100%;
+
+}
+
+header {
+    background-color: #3e4c5c;
+}
+
+.hero {
+    display: grid;
+    grid-template-rows: max-content;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    width: 100%;
+
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.hero h1 {
+    font-family: roboto, sans-serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: rgb(180, 134, 134);
+}
+
+.about {
+    padding-top: 1.5rem;
+    height: 20rem;
+    width: 100%;
+    background-color: #008080;
+    color: white;
+
+}
+
+.about p {
+    text-align: center;
+    line-height: 2;
+    width: 60%;
+    margin: 2rem auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+}
+
+#projects-heading {
+    padding-top: 2rem;
+    color: #3e4c5c;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.projects-section {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffe498;
+    height: 100vh;
+    text-align: center;
+}
+
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    margin: 0 auto;
+}
+
+.card-container {
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+
+}
+
+.card-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    height: 100%;
+
+    opacity: 0;
+
+}
+
+.card:hover .card-link {
+    opacity: 0.7;
+
+}
+
+
+
+
+.card:hover .card-link {
+    opacity: 0.7;
+
+}
+
+
+.card img {
+    max-width: 30%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card-text {
+    width: 100%;
+    margin: 3rem auto;
+    font-family: roboto, sans-serif;
+    font-size: 0.9rem;
+    color: #3e4c5c;
+    position: relative;
+    z-index: 1
+}
+
+.card-text:hover {
+    width: 100%;
+    transform: scale(0.9);
+    transition: all 0.3s ease-in-out;
+    font-family: roboto, sans-serif;
+    font-size: 1rem;
+    color: #ffe498;
+    position: relative;
+
+}
+
+.card {
+    position: relative;
+    flex: 1 0 50%;
+    margin: 5rem auto;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: right;
+    height: 15rem;
+}
+
+.card:hover {
+    transform: rotateX(30deg);
+    transition: all 0.9s ease-in-out;
+    box-shadow: 5px 5px 5px #3e4c5c;
+    position: relative;
+    flex: 1 0 50%;
+    margin: 5rem auto;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: right;
+    height: 15rem;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        flex: 1 0 100%;
+        /* Stacks cards vertically on small screens */
+    }
+}
+
+.skills {
+    background-color: #f6c1ff;
+    height: 100%;
+    padding: 2rem;
+}
+
+.skills h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: rgb(180, 134, 134);
+}
+
+.skill-wrapper {
+    background-color: #ec7eff;
+    text-align: center;
+    width: fit-content;
+    margin: 1rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+    border: 1px solid #3e4c5c;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #3e4c5c;
+}
+
+.skill-container {
+    text-align: center;
+}
+
+#contact {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7d1fd;
+    height: 100vh;
+}
+
+.contact-form {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px solid #3e4c5c;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #3e4c5c;
+}
+
+.form-control:focus {
+    background-color: #b5f2fa;
+}
+
+.skills .form-range:focus-within {
+    outline: none;
+    box-shadow: 0 0 0 0.25rem rgba(255, 0, 200, 0.5);
+}
+
+.mb-3 {
+    text-align: center;
+    width: 100%;
+    border: 2px solid #3e4c5c;
+    border-radius: 10px;
+}
+
+.mb-2 {
+    text-align: left;
+    width: 100%;
+
+}
+
+footer {
+    display: block;
+    text-align: center;
+    background-color: #000000;
+    height: 1.5rem;
+    color: white;
+    width: 100%;
+
+}
+
