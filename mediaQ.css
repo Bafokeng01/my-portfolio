@@ -67,19 +67,19 @@
         display: flex;
         flex-wrap: wrap;
         margin: 5rem auto;
-        width: 80%;
+        width: 60%;
 
     }
 
     .card img {
-        max-width: 50%;
+        max-width: 30%;
         height: auto;
 
         position: absolute;
 
         top: 0;
 
-left: 0;
+        left: 0;
     }
 
     .card {
@@ -101,4 +101,91 @@ left: 0;
 
 .hero p {
     font-size: 0.8rem;
+}
+
+#projects {
+    background-color: black;
+    height: 40rem;
+}
+
+.card-container {
+    display: flex;
+    margin: 5rem auto;
+    width: 80%;
+    max-height: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img {
+    display: none;
+}
+
+.card:nth-child(1) {
+    background-image: url(calc.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    position: relative;
+    width: 100%;
+    flex: 1 0 100%;
+    margin: 10px;
+    padding: 15px;
+
+    border: 1px solid #ddd;
+    border-radius: 5px;
+
+    height: 10rem;
+
+
+}
+
+.card:nth-child(2) {
+    background-image: url(hourglass.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: #000;
+    position: relative;
+    width: 100%;
+    flex: 1 0 100%;
+    margin: 10px;
+    padding: 15px;
+
+    border: 1px solid #ddd;
+    border-radius: 5px;
+
+    height: 10rem;
+
+
+}
+
+.card:hover {
+    display: none;
+}
+
+.card-text {
+    width: 100%;
+    margin: 3rem auto;
+    font-family: roboto, sans-serif;
+    font-size: 0.9rem;
+    color: #fff;
+    position: relative;
+    z-index: 1
+}
+
+.card-text:hover {
+    display: none;
+
 }
